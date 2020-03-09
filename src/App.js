@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
+import { CardList } from './components/card-list/card-list.component';
 import './App.css';
+
+//Greate React Developers Do
+//1. Decide on Components
+//2. Decide the State and where it lives
+//3. Whate changes when state changes
 
 class App extends Component {
   constructor() {
@@ -19,9 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.monsters.map(monster => (
-          <h1 key={monster.id}>{monster.name}</h1>
-        ))}
+        <CardList monsters={this.state.monsters} />
       </div>
     )
   }
