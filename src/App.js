@@ -10,7 +10,7 @@ import { setSearchField } from './actions/';
 //Greate React Developers Do
 //1. Decide on Components
 //2. Decide the State and where it lives
-//3. Whate changes when state changes
+//3. What changes when state changes
 
 const mapStateToProps = state => {
   return {
